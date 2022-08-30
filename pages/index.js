@@ -1,11 +1,15 @@
-import Hero from "../components/Hero"
+import Container from "../components/Container"
 import Icons from "../components/Icons"
 import Aliados from "../components/aliados"
-import Cursos from "../components/Cursos"
+
+
+
+
 
 export default function Home() {
   return (
-    <><><Hero /><Icons /><Aliados /></><Cursos /></>
+    <><Container /><Icons /><Aliados /></>
+
     
   )
   
