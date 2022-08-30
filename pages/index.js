@@ -11,13 +11,12 @@ export default function Home() {
       <>
           <Head>
               <link rel="preconnect" href="https://fonts.googleapis.com"/>
-              <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
               <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
                     rel="stylesheet"/>
               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"/>
           </Head>
           <Hero/>
-          {/*<Container />*/}
           <Icons />
           <Aliados />
           <Cursos />
