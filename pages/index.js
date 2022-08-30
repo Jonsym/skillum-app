@@ -1,8 +1,4 @@
-import Container from "../components/Container"
-import Icons from "../components/Icons"
-import Aliados from "../components/Aliados"
-import Hero from "../components/Hero"
-import Cursos from "../components/Cursos"
+import {Icons, Hero, Aliados, Header, Experts, FeaturedCourse, CTA, Footer} from "../components"
 
 import Head from 'next/head'
 
@@ -16,11 +12,14 @@ export default function Home() {
                     rel="stylesheet"/>
               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"/>
           </Head>
+          <Header/>
           <Hero/>
           <Icons />
           <Aliados />
-          <Cursos />
+          <Experts />
+          <FeaturedCourse />
+          <CTA />
+          <Footer />
       </>
   )
-
 }

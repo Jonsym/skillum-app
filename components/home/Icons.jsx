@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Icons = () => {
+export const Icons = () => {
   return (
     <section className='icons-wrapper max-w-5xl my-0 mx-auto'>
         <div className='iconos mt-14 flex justify-between'>
@@ -70,5 +70,3 @@ const Icons = () => {
 
   )
 }
-
-export default Icons
