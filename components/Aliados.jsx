@@ -3,7 +3,7 @@ import React from 'react'
 const Aliados = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
             <img className="h-10" src="https://www.skillum.mx/images/aliados/plm-del-norte.png" alt="" />

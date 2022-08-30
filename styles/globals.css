@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -12,4 +14,8 @@
     color: #4700E9;
     background: linear-gradient(297deg, rgba(195, 166, 255, 0.03) 0%, rgba(81, 0, 255, 0.06)100%);
     font-family: simple-line;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
 }
