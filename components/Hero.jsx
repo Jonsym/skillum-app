@@ -11,9 +11,9 @@ const navigation = [
 ]
 export default function Hero() {
     return (
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden bg-transparent" style={{ backgroundColor: '#E0F3FF' }}>
             <Popover as="header" className="relative">
-                <div className="bg-gray-900 pt-6">
+                <div className="bg-transparent pt-6">
                     <nav
                         className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
                         aria-label="Global"
