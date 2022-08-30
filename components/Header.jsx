@@ -8,10 +8,10 @@ const navigation = [
     { name: 'CONTACTO', href: '/contacto' },
 ]
 
-export const Header = () => {
+export const Header = ({ session }) => {
     return (
         <Popover as="header" className="relative">
-            <div className="absolute z-20 w-full py-5">
+            <div className={`absolute z-20 w-full py-5 ${session ? 'bg-white shadow-md': ''}`}>
                 <nav
                     className="relative max-w-5xl mx-auto flex items-center justify-between px-4 sm:px-6"
                     aria-label="Global"

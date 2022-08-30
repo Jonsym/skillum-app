@@ -2,6 +2,7 @@ import {Icons, Hero, Aliados, Header, Experts, FeaturedCourse, CTA, Footer} from
 
 import Head from 'next/head'
 
+
 export default function Home() {
   return (
       <>
