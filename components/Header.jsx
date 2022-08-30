@@ -2,6 +2,7 @@ import {Popover, Transition} from "@headlessui/react";
 import {MenuIcon, XIcon} from "@heroicons/react/outline";
 import {Fragment} from "react";
 import {Logo} from './Logo';
+import Link from 'next/link';
 
 const navigation = [
     { name: 'CURSOS', href: '/cursos' },
@@ -35,9 +36,11 @@ export const Header = ({ session }) => {
                         </div>
                     </div>
                     <div className="hidden md:flex md:items-center md:space-x-6">
-                        <a href="components/home/Hero#" className="text-xs font-medium hover:text-gray-300">
+                        <Link href="/login">
+                        <a className="text-xs font-medium hover:text-gray-300">
                             ENTRAR
                         </a>
+                        </Link>
                         <a
                             href="components/home/Hero#"
                             className="inline-flex items-center px-4 py-2 border border-transparent text-xs font-medium color-blue"
@@ -88,19 +91,22 @@ export const Header = ({ session }) => {
                                 ))}
                             </div>
                             <div className="mt-6 px-5">
-                                <a
-                                    href="components/home/Hero#"
-                                    className="block text-center w-full py-3 px-4 rounded-md shadow bg-indigo-600 text-white font-medium hover:bg-indigo-700"
-                                >
-                                    REGISTRATE GRATIS
-                                </a>
+                                <Link href="/login">
+                                    <a
+                                        className="block text-center w-full py-3 px-4 rounded-md shadow bg-indigo-600 text-white font-medium hover:bg-indigo-700"
+                                    >
+                                        REGISTRATE GRATIS
+                                    </a>
+                                </Link>
+
                             </div>
                             <div className="mt-6 px-5">
                                 <p className="text-center text-base font-medium text-gray-500">
-                                    {' '}
-                                    <a href="components/home/Hero#" className="text-gray-900 hover:underline">
+                                    <Link href="/login">
+                                    <a className="text-gray-900 hover:underline">
                                         ENTRAR
                                     </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
