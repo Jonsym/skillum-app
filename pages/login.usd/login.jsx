@@ -97,7 +97,6 @@ const login = () => {
             </div>
           </form>
 
-          {/* Desde aqui deje de poner estilos */}
           
           <div class='model-pop hidden fixed z-10 left-0 top-0 w-full h-full overflow-auto bg-transparent justify-items-center items-center'>
             <div class='passform relative max-w-md h-min bg-white rounded-lg p-8 flex flex-col'>
