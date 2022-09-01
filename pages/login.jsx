@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 const login = () => {
   return (
@@ -7,33 +8,27 @@ const login = () => {
       <div className='wrapper-header flex justify-start items-center pt-4 z-10 h-min min-h-0 overflow-x-clip max-w-4xl my-0 mx-auto'>
 
         <a href="index.php">
-          <img class='h-8 w-auto sm:h-10' src="https://www.skillum.mx/images/Logo.png" alt="" />
+          <img class='cursor-pointer h-8 w-auto sm:h-10' src="https://www.skillum.mx/images/Logo.png" alt="" />
         </a>
 
         <a href="index.php">
-          <img class="h-2 w-auto sm:h-4 pl-3" src="https://www.skillum.mx/images/iso.png" alt="" />
+          <img class="cursor-pointer h-2 w-auto sm:h-4 pl-3" src="https://www.skillum.mx/images/iso.png" alt="" />
         </a>
 
-        <div class='menu z-10 flex justify-between'>
-          <div id='opacity'></div>
-            <input  class='hidden text-black font-normal pt-3.5 pl-8 h-12 bg-white border-none rounded-lg' type="text" />
-            
-
-            <ul class='nav-container z-10 flex justify-between'>
-              <ul class='nav-link left mx-5'></ul>
-              <ul class='nav-link right mx-auto'>
-                <li class='text-xs font-medium hover:text-gray-300'>¿No tienes una cuenta?</li>
-                <li class='flex items-center px-2.5 font-bold text-xs tracking-normal mb-px'>
-                  <a  class='inline-flex items-center px-4 py-2 border border-transparent text-xs font-medium color-blue' href='https://www.skillum.mx/register.php'>
-                    "REGISTRATE GRATIS"
-                    <span class='icon-arrow-right'>
-                      :before
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </ul>
-        </div>
+        <div className="hidden md:flex md:items-center md:space-x-6">
+                        <Link href="/login">
+                        <a className="text-sm font-normal hover:text-gray-300">
+                            ¿No tienes una cuenta?
+                        </a>
+                        </Link>
+                        <a
+                            href="components/home/Hero#"
+                            className="inline-flex items-center px-4 py-2 border border-transparent text-xs font-medium color-blue text-violet-700"
+                        >
+                            REGISTRATE GRATIS
+                            <span className="icon-arrow-right"/>
+                        </a>
+                    </div>
       </div>
     </header>
 
@@ -127,30 +122,30 @@ const login = () => {
             </div>
           </div>
 
-          <div class='change-pop'>
-            <div class='plassform drop-shadow'>
-              <span class='close'>
-                <i class='plus-material'></i>
+          <div class='change-pop hidden fixed z-10 left-0 top-0 w-full h-full overflow-auto bg-black justify-items-center items-center'>
+            <div class='plassform relative max-w-md h-min bg-white rounded-lg p-8 flex flex-col border shadow-black'>
+              <span>
+                <i class='plus-material absolute top-0 right-1 text-base text-indigo-700 font-semibold'>close</i>
               </span>
-              <h3>Recuperar contraseña</h3>
-              <div class='divider-form'></div>
-              <p>Crea una nueva contraseña</p>
+              <h3 class='font-normal text-xl'>Recuperar contraseña</h3>
+              <div class='divider-form w-full border-t border-solid border-white mt-8 mb-8'></div>
+              <p class='text-sm font-normal'>Crea una nueva contraseña</p>
 
               <form class="changeform">
-                <ul class='input-fild'>
-                  <li>
-                    <input type="password" placeholder='Clave Nueva' />
+                <ul class='input-fild mt-6 flex items-center flex-row'>
+                  <li class='w-4/5 mr-6'>
+                    <input type="password h-12 bg-white border-none rounded-lg p-3.5 w-full" placeholder='Clave Nueva' />
                   </li>
-                  <li>
-                    <i class='plus-material'>visibility</i>
+                  <li class='mr-6'>
+                    <i class='plus-material text-indigo-700 cursor-pointer'>visibility</i>
                   </li>
-                  <p>Tu contraseña debe contener al menos seis caracteres, una mayúscula y un número</p>
-                  <ul class='passbuttoms'>
+                  <p class='mt-2 text-black text-xs font-normal'>Tu contraseña debe contener al menos seis caracteres, una mayúscula y un número</p>
+                  <ul class='passbuttoms flex flex-row justify-start items-center mt-10'>
                     <li>
-                      <button>Cambiar</button>
+                      <button class='cursor-pointer bg-indigo-700 pt-2 pr-3 pb-2 pl-3 border-0 rounded text-white text-xs font-bold flex items-center tracking-normal mr-6 transition-all duration-75 ease-linear'>CAMBIAR</button>
                     </li>
                     <li>
-                      <a class='botondos cancel'>CANCELAR</a>
+                      <a class='botondos cancel text-indigo-700 text-xs font-bold cursor-pointer'>CANCELAR</a>
                     </li>
                   </ul>
                 </ul>
@@ -158,50 +153,48 @@ const login = () => {
             </div>
           </div>
 
-          <div class='final-pop'>
-            <div class='registry-sent'>
-              <span class='close'>
-                <i class='plus-material'>close</i>
+          <div class='final-pop hidden fixed z-10 left-0 top-0 w-full h-full overflow-auto bg-black justify-items-center items-center'>
+            <div class='registry-sent max-w-md h-96 bg-white rounded-lg p-12 absolute box-border flex flex-col items-center text-center justify-between border shadow-black'>
+              <span>
+                <i class='plus-material absolute top-0 right-1 text-xl text-indigo-700 font-semibold'>close</i>
               </span>
-              <i class='icon-card'></i>
-              <h1>Contraseña actualizada</h1>
-              <h2>Entra en Skillum</h2>
-              <button>Entrar</button>
+              <i class='icon-card not-italic w-16 h-16 rounded-br-3xl grid place-items-center mb-4 text-3xl'></i>
+              <h1 class='text-2xl font-normal'>Contraseña actualizada</h1>
+              <h2 class='text-xl font-normal'>Entra en Skillum</h2>
+              <button class='text-xs font-bold tracking-normal bg-indigo-700 text-white p-3.5 rounded transition-all duration-75 ease-linear delay-75'>Entrar</button>
             </div>
           </div>
         </div>
       </div>
-      <img class='drop-shadow' src="https://www.skillum.mx/images/login-girl.png" alt=''/>
+      <img class='absolute -z-10 mt-16 ml-64 rounded-xl border' src="https://www.skillum.mx/images/login-girl.png" alt=''/>
     </div>
 
-    <section class='footer'>
-      <div class='foot-wrap'>
-        <div class='foot-left'>
-          <img src="https://www.skillum.mx/images/Skillum.png" alt="" />
-          <img src="https://www.skillum.mx/images/Skillum.png" alt="" />
+    <section class='footer bg-indigo-800 pt-7 pr-0 pb-7 pl-0 mt-auto'>
+      <div class='foot-wrap flex justify-start items-center max-w-5xl mt-0 mr-auto mb-0 ml-auto'>
+        <div class='foot-left flex flex-row items-center'>
+          <img class='w-8' src="https://www.skillum.mx/images/Logo(1).png" alt="" />
+          <img class='ml-3 h-4' src="https://www.skillum.mx/images/Skillum.png" alt="" />
         </div>
-        <ul class='foot-social'>
-
-        <li>
-          <a href="https://api.whatsapp.com/send?phone=524771189134&amp;text=Me%20interesa%20conocer%20mas%20sobre%20Skillum" class="ion-social-whatsapp"></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/skillummx/?hl=en" class="fab"></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/SkillumMx" class="fab"></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/joseabelarteaga" class="ion-social-twitter"></a>
-        </li>
-
+        <ul class='foot-social ml-auto flex justify-start text-base'>
+          <li class='ml-6'>
+            <a  class='text-white no-underline' href="https://api.whatsapp.com/send?phone=524771189134&amp;text=Me%20interesa%20conocer%20mas%20sobre%20Skillum"></a>
+          </li>
+          <li class='ml-6'>
+            <a class='text-white no-underline' href="https://www.instagram.com/skillummx/?hl=en"></a>
+          </li>
+          <li class='ml-6'>
+            <a class='text-white no-underline' href="https://www.facebook.com/SkillumMx"></a>
+          </li>
+          <li class='ml-6'>
+            <a class='text-white no-underline' href="https://twitter.com/joseabelarteaga"></a>
+          </li>
         </ul>
       </div>
 
-      <div class='legal-wrapper'>
-        <ul class='legal-terms'>
-          <li>
-            <a href='https://www.skillum.mx/terms.php'>
+      <div class='legal-wrapper border-t border-solid ring-offset-indigo-600 pt-6 mt-10 max-w-4xl my-0 mx-auto'>
+        <ul class='legal-terms flex justify-end'>
+          <li class='ml-6'>
+            <a class='text-white no-underline' href='https://www.skillum.mx/terms.php'>
               <span>Terminos y condiciones</span>
             </a>
           </li>
