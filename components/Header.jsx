@@ -2,7 +2,7 @@ import {Popover, Transition} from "@headlessui/react";
 import {MenuIcon, XIcon} from "@heroicons/react/outline";
 import {Fragment} from "react";
 import {Logo} from './Logo';
-import Link from 'next/link';
+import Link from 'next/link';   
 
 const navigation = [
     { name: 'CURSOS', href: '/cursos' },

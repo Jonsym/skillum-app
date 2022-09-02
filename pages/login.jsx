@@ -16,19 +16,19 @@ const login = () => {
         </a>
 
         <div className="hidden md:flex md:items-center md:space-x-6">
-                        <Link href="/login">
-                        <a className="text-sm font-normal hover:text-gray-300">
-                            ¿No tienes una cuenta?
-                        </a>
-                        </Link>
-                        <a
-                            href="components/home/Hero#"
-                            className="inline-flex items-center px-4 py-2 border border-transparent text-xs font-medium color-blue text-violet-700"
-                        >
-                            REGISTRATE GRATIS
-                            <span className="icon-arrow-right"/>
-                        </a>
-                    </div>
+            <Link href="/login">
+                <a className="text-sm font-normal hover:text-gray-300">
+                    ¿No tienes una cuenta?
+                </a>
+            </Link>
+                <a
+                href="components/home/Hero#"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-xs font-medium color-blue text-violet-700"
+                >
+                REGISTRATE GRATIS
+                <span className="icon-arrow-right"/>
+                </a>
+        </div>
       </div>
     </header>
 
@@ -85,7 +85,7 @@ const login = () => {
                   <li class='p-3 border-2 rounded-lg flex flex-row items-center justify-center cursor-pointer'>
                     <i class='logo-facebook mr-4 text-sky-800 '></i>
                     <img class='w-5 mr-4' src='' alt/>
-                    Facebook
+                    Facebook 
                   </li>
                 </a>
               </ul>
