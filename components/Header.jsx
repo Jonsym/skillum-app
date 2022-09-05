@@ -2,7 +2,7 @@ import {Popover, Transition} from "@headlessui/react";
 import {MenuIcon, XIcon} from "@heroicons/react/outline";
 import {Fragment} from "react";
 import {Logo} from './Logo';
-import Link from 'next/link';   
+import Link from 'next/link';
 
 const navigation = [
     { name: 'CURSOS', href: '/cursos' },
@@ -37,17 +37,17 @@ export const Header = ({ session }) => {
                     </div>
                     <div className="hidden md:flex md:items-center md:space-x-6">
                         <Link href="/login">
-                        <a className="text-xs font-medium hover:text-gray-300">
-                            ENTRAR
-                        </a>
+                            <a className="text-xs font-medium hover:text-gray-300">
+                                ENTRAR
+                            </a>
                         </Link>
-                        <a
-                            href="components/home/Hero#"
-                            className="inline-flex items-center px-4 py-2 border border-transparent text-xs font-medium color-blue"
-                        >
-                            REGISTRATE GRATIS
-                            <span className="icon-arrow-right"/>
-                        </a>
+                        <Link href="/registro">
+                            <a className="inline-flex items-center px-4 py-2 border border-transparent text-xs font-medium color-blue">
+                                REGISTRATE GRATIS
+                                <span className="icon-arrow-right"/>
+                            </a>
+                        </Link>
+
                     </div>
                 </nav>
             </div>
