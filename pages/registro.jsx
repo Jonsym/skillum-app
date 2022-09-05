@@ -178,7 +178,6 @@ const registro = () => {
           </li>
         </ul>
       </div>
-
     </section>
 
     </main>
