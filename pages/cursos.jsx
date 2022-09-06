@@ -4,10 +4,6 @@ import Link from 'next/link';
 const cursos = () => {
   return (
     <main>
-        <div className='course-bg flex flex-col items-center relative bg-slate-100 overflow-hidden'>
-            <img className='absolute min-w-full w-full -z-10' src="https://www.skillum.mx/images/course-bg/course-bg.png" alt="" />
-        </div>
-
         <header className='relative'>
             <div className='absolute z-20 w-full py-5'>
                 <nav className='relative max-w-5xl mx-auto flex items-center justify-between px-4 sm:px-6'>
@@ -27,6 +23,9 @@ const cursos = () => {
                         </div>
                         <div class="hidden space-x-8 md:flex md:ml-10">
                             <a href="#" class="text-xs font-medium hover:text-gray-300">CURSOS</a>
+                            <a href="#" class="text-xs font-medium hover:text-gray-300">EVENTOS</a>
+                            <a href="#" class="text-xs font-medium hover:text-gray-300">PROFESORES</a>
+                            <a href="#" class="text-xs font-medium hover:text-gray-300">BLOG </a>
                             <a href="#" class="text-xs font-medium hover:text-gray-300">CONTACTO</a>
                         </div>
                     </div>
@@ -42,7 +41,7 @@ const cursos = () => {
         </header>
 
         <section className='cursos-wrapper mt-44 max-w-4xl my-0 mx-auto'>
-            <h1 className='text-2xl font-normal'>Descubre que tenemos para tí</h1>
+            <h1 className='text-2xl font-normal'>Cursos</h1>
 
             {/* Cursos cards */}
             <div className='cursos-card flex justify-start mt-6 p-6 bg-white rounded border border-solid shadow'>
