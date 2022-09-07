@@ -28,7 +28,7 @@ export const Footer = () => {
                 <ul className='legal-terms flex justify-end'>
                     <li className='ml-6'>
                         <a className='text-white no-underline' href='https://www.skillum.mx/terms.php'>
-                            <span>Terminos y condiciones</span>
+                            <span>CONDICIONES DE USO</span>
                         </a>
                     </li>
                 </ul>
