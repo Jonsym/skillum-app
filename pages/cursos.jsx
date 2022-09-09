@@ -347,8 +347,8 @@ const cursos = () => {
 
                 <h1 className='text-5xl pt-32 pb-8'>Conoce más de Skillum</h1>
 
-                <div className='grid grid-cols-3 gap-44'>
-                    <div class="w-96 p-px rounded overflow-hidden shadow-lg">
+                <div className='grid grid-cols-3 gap-4'>
+                    <div class="w-80 p-px rounded overflow-hidden shadow-lg">
                         <img class="w-full" src="https://www.skillum.mx/images/cursos-card2.png" alt="" />
                         <div className='mx-4 my-5 flex'>
                             <img className='flex pb-4 mr-1' src="https://www.skillum.mx/images/miniatura.png" alt="" />
@@ -365,7 +365,7 @@ const cursos = () => {
                         </div>
                     </div>
 
-                    <div class="w-96 p-px rounded overflow-hidden shadow-lg">
+                    <div class="w-80 p-px rounded overflow-hidden shadow-lg">
                         <img class="w-full" src="https://www.skillum.mx/images/cursos-card2.png" alt="" />
                         <div className='mx-4 my-5 flex'>
                             <img className='flex pb-4 mr-1' src="https://www.skillum.mx/images/miniatura.png" alt="" />
@@ -382,7 +382,7 @@ const cursos = () => {
                         </div>
                     </div>
 
-                    <div class="w-96 p-px rounded overflow-hidden shadow-lg">
+                    <div class="w-80 p-px rounded overflow-hidden shadow-lg">
                         <img class="w-full" src="https://www.skillum.mx/images/cursos-card2.png" alt="" />
                         <div className='mx-4 my-5 flex'>
                             <img className='flex pb-4 mr-1' src="https://www.skillum.mx/images/miniatura.png" alt="" />
