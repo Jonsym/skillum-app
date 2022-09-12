@@ -24,6 +24,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.19.0":
+  version: 7.19.0
+  resolution: "@babel/runtime@npm:7.19.0"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: fa69c351bb05e1db3ceb9a02fdcf620c234180af68cdda02152d3561015f6d55277265d3109815992f96d910f3db709458cae4f8df1c3def66f32e0867d82294
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^1.3.0":
   version: 1.3.1
   resolution: "@eslint/eslintrc@npm:1.3.1"
@@ -250,6 +259,31 @@ __metadata:
   version: 1.1.4
   resolution: "@rushstack/eslint-patch@npm:1.1.4"
   checksum: 597bc84e2f76c7f5f2bcedd4c4b1dd5d02524167a0f67ac588e8fbbd94666297aaf0e6a53ec46afb95554164fc1169ff782841003280e4bc98e80ab6559412c6
+  languageName: node
+  linkType: hard
+
+"@styled-icons/heroicons-outline@npm:^10.46.0":
+  version: 10.46.0
+  resolution: "@styled-icons/heroicons-outline@npm:10.46.0"
+  dependencies:
+    "@babel/runtime": ^7.19.0
+    "@styled-icons/styled-icon": ^10.7.0
+  peerDependencies:
+    react: "*"
+    styled-components: "*"
+  checksum: a18421bd0442f47904cef4e352ab8616b77fb3b33625fdb73d520f71bae9a91ccc25a570113b1d8e8a872f3e10c8185268e90f7a1358ed28ac83ba2231c26eb3
+  languageName: node
+  linkType: hard
+
+"@styled-icons/styled-icon@npm:^10.7.0":
+  version: 10.7.0
+  resolution: "@styled-icons/styled-icon@npm:10.7.0"
+  dependencies:
+    "@babel/runtime": ^7.19.0
+  peerDependencies:
+    react: "*"
+    styled-components: ">=4.1.0 <6"
+  checksum: 3a3fe56240e5d4059bf4e740de3be10234f3fc5fd70249c387774623485823c8ba2cda2ef0280aa8417310ddec4a9e49dddd1642e4ee7502aacfa34c163754a2
   languageName: node
   linkType: hard
 
@@ -3000,6 +3034,7 @@ __metadata:
   dependencies:
     "@headlessui/react": ^1.6.6
     "@heroicons/react": ^1.0.6
+    "@styled-icons/heroicons-outline": ^10.46.0
     autoprefixer: ^10.4.8
     eslint: 8.21.0
     eslint-config-next: 12.2.5
