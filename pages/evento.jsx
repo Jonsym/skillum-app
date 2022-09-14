@@ -6,6 +6,7 @@ import React from "react";
 const evento = () => {
   return (
     <Layout>
+        
         <div className="max-w-5xl m-auto pt-16">
             <div className="folder-address wrapper flex mt-28 mb-5 border-b border-gray-400 pb-5">
                 <Image src={LogoBW} alt="Logo" width={16} height={16}/>
