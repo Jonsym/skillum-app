@@ -1,4 +1,4 @@
-import {Icons, Hero, Aliados, Header, Experts, FeaturedCourse, CTA, Footer} from "../components"
+import {Icons, Hero, Aliados, Header, Experts, FeaturedCourse, CTA, Footer, Unicos, Conocer} from "../components"
 
 import Head from 'next/head'
 
@@ -17,8 +17,10 @@ export default function Home() {
           <Hero/>
           <Icons />
           <Aliados />
-          <Experts />
+          <Unicos />
           <FeaturedCourse />
+          <Experts />
+          <Conocer />
           <CTA />
           <Footer />
       </>
